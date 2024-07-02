@@ -18,13 +18,14 @@ spring 프로젝트 이기 때문에 __version 명시__
 public class ModuleConfig {
 }
 ```
-__@ComponentScan__ : ModuleConfig 파일이 있는 path 부터 하위 위치까지 Component를 scan하기 위해
+__@ComponentScan__ : ModuleConfig 파일이 있는 path 부터 하위 위치까지 Component를 scan하기 위해   
 __@EntityScan, @EntityJpaRepositories__ : Main프로젝트에서 Entity와 JpaRepository를 읽어 @Bean으로 생성
 
 ### 3. org.springframework.boot.autoconfigure.AutoConfiguration.imports
 ```
 org.example.ModuleConfig
 ```
+__Path__: /resources/META-INF/spring   
 Main에서 Run시 __ModuleConfig 파일을 읽기__ 위해 설정
 
 #### 참고
